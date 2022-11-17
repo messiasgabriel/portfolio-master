@@ -1,1 +1,255 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root{
+    --font-default: 'Montserrat', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-default);
+    /*outline: 1px solid red;*/
+}
+body{
+    background: #4f4f4f2f;
+}
+img{
+    width: 100%;
+    border-radius: 12px;
+}
+.bio {
+    display: flex;
+    max-width: 1046px;
+    min-height: 311px;
+    margin: 40px auto 0px auto;
+    padding: 2%;
+    border-radius: 12px;
+    background-color: white;
+    
+}
+.bio-img{
+    max-width: 272px;
+    min-height: 266px;
+    border-radius: 12px;
+    border-radius: 12px;
+    overflow: hidden; 
+}
+.bio-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+}
+.bio-info-up {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.bio-info-up-contact p{
+    padding: 3%;
+}
+.bio-info-down{
+    padding-top: 7%;
+    width: 80%;
+}
+
+/* MAIN CONTENT */
+
+.main-container {
+    display: grid;
+    max-width: 1046px;
+    grid-template-columns:  minmax(200px, 415px) minmax(200px, 596px);
+    grid-template-areas:
+    "skill  blog"
+    "hobbies blog"
+    "hobbies experiencies";
+    gap: 40px 30px;
+    margin: 42px auto;
+    border-radius: 12px;
+}
+.skills {
+    grid-area: skill;
+    height: 303px;
+    border-radius: 12px;
+    background-color: white;
+    padding: 4%;
+}
+.skills h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+.list-skill li{
+    font-size: 16px;
+    color: #4F4F4F;
+    padding: 3% 0% 3% 0%;;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* SKILLS PORCENT */
+
+.box-percentage {
+    background-color: #C4C4C4;
+    width: 237px;
+    height: 9px;
+    border-radius: 12px;
+    margin-right: 23px;
+}
+
+.box-percentage .line-level {
+    height: 100%;
+    background-color: #2F80ED;
+    border-radius: 12px;
+}
+
+.box-percentage  .l1 {
+    width: 0%;
+}
+
+.box-percentage  .l2 {
+    width: 70%;
+}
+
+.box-percentage  .l3{
+    width: 80%;
+}
+
+.box-percentage  .l4 {
+    width: 90%;
+}
+
+.box-percentage  .l5{
+    width: 0%;
+}
+
+.box-percentage  .l6 {
+    width: 0%;
+}
+
+/* BLOG SECTION */
+
+.blog-container {
+    grid-area: blog;
+    height: 656px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 4% 0 4% 4%;
+}
+.blog-container > h2 {
+    font-size: 16px;
+    margin-top: 2%;
+    color: #E0E0E0;
+}
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+.blog-content h2 {
+    font-size: 24px;
+    max-width: 180px;
+    margin-top: 3%;
+}
+.blog-img {
+    border-radius: 12px 0px 0px 12px;
+    max-width: 360px;
+    max-height: 321px;
+}
+.blog-text p {
+    font-size: 16px;
+    color: #828282;
+    max-width: 492px;
+}
+.blog-container a {
+    color: #2F80ED;
+    font-size: 16px;
+}
+
+/* HOBBIES SECTION */
+
+.hobbies-container {
+    background: white;
+    grid-area: hobbies;
+    min-height: 800px;
+    padding: 4%;
+    border-radius: 12px;
+}
+.hobbies-content { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.hobbies-container h2 {
+    margin-bottom: 5%;
+}
+.hobbies-img {
+    max-width: 370px;
+    max-height: 140px;
+}
+.hobbies-info h3, p {
+    margin-bottom: 3%;
+}
+/* EXPERIENCES SECTION */
+
+.experiencies-container {
+    grid-area: experiencies;
+    min-height: 482px;
+    background: white;
+    border-radius: 12px;
+    padding: 4%;
+}
+.experiencies-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.experiencies-info {
+    display: flex;
+}
+.experiencies-img {
+   width: 50%;
+   height: 50%;
+}
+.experiencies-detail{
+    
+}
+
+/* MENU PROJECTS */
+
+.menu-projects {
+    margin: 0 auto;
+    max-width: 1046px;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 3%;
+}
+.menu-projects h3 {
+    padding: 3% 3% 1% 3%;
+    color: #4F4F4F;
+    font-size: 1.125rem;
+    line-height: 22px;
+}
+.buttons input {
+    border-radius: 12px;
+    width: 85px;
+    height: 33px;
+    border: 1px solid #4F4F4F;
+    margin: 0 2px 3% 0px;
+    font-size: 0.875rem;
+    color: #4F4F4F;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.buttons input:first-child{
+    margin-left: 3%;
+}
+.buttons input:hover, .buttons input[data-active="true"]{
+    background-color: #2F80ED;
+    color: white;
+    border: 1px solid #2F80ED;
+}
