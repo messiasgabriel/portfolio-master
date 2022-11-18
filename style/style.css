@@ -355,6 +355,7 @@ img{
 }
 footer > #signature {
     font-size: 0.875rem;
+    margin-bottom: 1%;
     text-align: center;
     text-decoration: none;
     color: #828282;
