@@ -144,6 +144,7 @@ img{
 .blog-content{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 7%;
 }
 .blog-content h2 {
@@ -208,13 +209,10 @@ img{
 }
 .experiencies-info {
     display: flex;
+    gap: 20px;
 }
 .experiencies-img {
-   width: 50%;
-   height: 50%;
-}
-.experiencies-detail{
-    
+   max-width: 80%;
 }
 
 /* MENU PROJECTS */
@@ -253,3 +251,116 @@ img{
     color: white;
     border: 1px solid #2F80ED;
 }
+
+/* PROJECTS CONTENT*/
+
+.projects-container {
+    max-width: 1046px;
+    display: flex;
+    margin: 0 auto 5% auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects-content {
+    max-width: 328px;
+    border-radius: 12px;
+    background: white;
+    margin-bottom: 10px;
+    padding: 2%;
+}
+.projects-content +.projects-content { 
+    margin-left: 29px;
+}
+.projects-img {
+    padding: 2%;
+    width: 218px;
+    height: 218px;
+    background-color: rgb(199, 199, 185);
+    margin:18px 18px 24px 18px;
+    border-radius: 12px;
+    overflow: hidden
+}
+
+.project-tags {
+    margin-left: 18px;
+    font-size: 16px;
+    color: #4F4F4F;
+    margin-bottom: 22px;
+}
+
+.project-tags span + span {
+    margin-left: 9px;
+}
+
+.project-info {
+    margin-left: 18px;
+    margin-bottom: 40px;
+}
+.project-info p {
+    height: 100px;
+}
+.project-info h4 {
+    font-size: 24px;
+    color: #333333;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: #828282;
+    line-height: 20px;
+}
+
+.project-buttons {
+    margin: 0 auto;
+    display: flex;
+}
+
+.project-buttons  input {
+    background-color: transparent;
+    width: 135px;
+    height: 46px;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #2F80ED;
+    border: 1px solid #2F80ED;
+    cursor: pointer;
+}  
+.project-buttons  input:last-of-type {
+    margin-left: 11px;
+} 
+.project-buttons input:hover{
+    background-color: #2F80ED;
+    color: white;
+    border: 1px solid #2F80ED;
+}
+
+@media (max-width:1061px) {
+    .projects-content + .projects-content  + .projects-content{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:703px) {
+    .projects-content   + .projects-content{
+        margin-top: 30px;
+    }
+}
+
+/* FOOTER */
+
+#signature{
+    margin-top: 7%;
+}
+footer > #signature {
+    font-size: 0.875rem;
+    text-align: center;
+    text-decoration: none;
+    color: #828282;
+}
+#signature > a{
+    font-size: 0.875rem;
+    color: #828282;
+}
+
