@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://messiasgabriel.github.io/portifolio-master/"  target="_blank">
+    <a href="https://messiasgabriel.github.io/portfolio-master/"  target="_blank">
       Demo
     </a>
     <span> | </span>
