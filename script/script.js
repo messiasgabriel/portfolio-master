@@ -41,13 +41,13 @@ const elementsDefault = () => {
     projects.innerHTML =  /*html*/`
     <div class="projects-content">
       <div class="project-img">
-        <img src="img/recipe-blog.png" alt="project Checkout">
+        <img src="img/recipe-blog.png" alt="Recipe blog">
       </div>
       <div class="project-tags">
         <span>#HTML</span> <span>#CSS</span> <span>#responsive</span>
       </div>
       <div class="project-info">
-        <h4>Checkout</h4>
+        <h4>Recipe Blog</h4>
         <p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The
           design is from devchallenge.io</p>
       </div>
@@ -58,7 +58,7 @@ const elementsDefault = () => {
     </div>
     <div class="projects-content">
       <div class="project-img">
-          <img src="img/edie-homepage.png" alt="project blog">
+          <img src="img/edie-homepage.png" alt="Edie Homepage">
       </div>
       <div class="project-tags">
           <span>#HTML</span> <span>#CSS</span> <span>#responsive</span>
@@ -75,7 +75,7 @@ const elementsDefault = () => {
 
   <div class="projects-content">
       <div class="project-img">
-          <img src="img/my-gallery.png" alt="project gallery">
+          <img src="img/my-gallery.png" alt="My gallery">
       </div>
       <div class="project-tags">
           <span>#HTML</span> <span>#CSS</span> <span>#Responsive</span>

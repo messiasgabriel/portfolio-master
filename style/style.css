@@ -365,3 +365,32 @@ footer > #signature {
     color: #828282;
 }
 
+/* MEDIA QUERY */
+
+@media screen and (max-width: 600px) {
+    .bio {
+        flex-direction: column;
+    }
+    .bio-info-up {
+        flex-direction: column;
+    }
+    .bio-info-up-contact p {
+        padding: 0;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .list-skill li{
+        padding: 2%;
+    }
+    .hobbies-content {
+        align-items: center;
+    }
+    .experiencies-info {
+        flex-direction: column;
+    }
+    .projects-content +.projects-content { 
+        margin-left: 0px;
+    }
+}
